@@ -26,14 +26,20 @@
 </head>
 
 <body>
+  <video autoplay muted loop id="myVideo">
+    <source src="img/jump.mp4" type="video/mp4">
+  </video>
   <div class="container">
+      
     <!-- Content 1170px -->
     <div class="finedust">
       <h2 class="main_title text-center"><span>오늘의 미세먼지</span></h2>
       <!-- 부트스트랩 기본 class중에 text-center 라는 클래스명은 자동으로 text-center 됨.-->
     </div>
     <div class="main_contain row">
+     
       <div class="food_container col-sm-6">
+        
         <div class="food_contain">
 
           <button id="food_title" class="btn btn-primary">식단 입력</button>
@@ -42,6 +48,7 @@
             <button id="myFoodButton" class="btn btn-primary">내 식단 등록</button>
           </div>
 
+          <div id="selectOption2">
           <div class="foodPart input-group mb-3">
             <div class="input-group-prepend">
               <button class="btn btn-outline-secondary" id="selectFoodOption" type="button">식단</button>
@@ -54,9 +61,10 @@
               <option value="healthyFood">건강식 900kcal</option>
             </select>
           </div>
-          
-          <button id="saveFoodButton" type="button" class="btn btn-dark">저장</button>
         </div>
+          <button id="saveFoodButton" type="button" class="btn btn-primary">저장</button>
+        </div>
+        
       </div>
 
       <!-- User 정의 식단 입력받는 pop up modal -->
@@ -151,7 +159,7 @@
         </div>
       </div>
       <button id="diary_button" type="button" class="btn btn-primary">내 일기</button>
-
+      
 
       <!-- Modal -->
       <!-- 운동 영상 클릭시 팝업창 (youtube 영상, 기록 저장 버튼) -->
@@ -228,6 +236,7 @@
         </div>
       </div>
     </div>
+    
 
     <!-- 승현님 JavaScript -->
     <script type="text/javascript">
@@ -273,7 +282,7 @@
         var selected_food = foods[key]; //사용자가 선택한 음식
         var food_info = []; //localStorage에 사용자가 저장한 food 배열을 담을거임
         recent_food = {}; //사용자가 선택한 음식 정보를 담을 객체
-
+        
         var isExist = false; //일단 today가 date에 없다는 가정 하에 false로 해놓는데, 있으면 true로 바꿔준다.
         for (var i in date) {
           if (date.indexOf(today) >= 0) {
@@ -403,6 +412,7 @@
 
     <!-- Subin JavaScript -->
     <script type="text/javascript">
+ 
       date_storageKey = 'date';
       workout_storageKey = 'workouts';  // 모든 운동 list를 localStorage에 저장하는 key
       workouts = {};                    // 모든 운동 list
@@ -545,7 +555,7 @@
         var date_info = {};
         var workout = workouts[id];
         var workout_names = [];
-
+  
         var isExist = false; //일단 없다는 가정 하에 false로 해놓는데, 있으면 true로 바꿔준다.
         for (var i in date) {
           if (date.indexOf(today) >= 0) {
