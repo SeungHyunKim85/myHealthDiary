@@ -1,8 +1,9 @@
 
 .logo{
-    font-family: 'Baloo Chettan', cursive;
+    font-family: 'PT Serif', serif;
     color:#fff;
 }
+
 div.main_contain {
     padding:70px 0px;
     text-align: center;
@@ -15,7 +16,7 @@ h2.main_title {
     opacity: 0.5;;
     text-shadow: 4px 2px 2px #333;
     font-weight: 600;
-    font-family: 'Baloo Chettan', cursive;
+    font-family: 'PT Serif', serif;
 }
 
 button#diary_button {
@@ -132,6 +133,16 @@ button#selectFoodOption {
     border-radius: 0;
 }
 
+button#saveFoodButton {
+    margin: 1rem auto;
+    width: 10rem;
+    background: black;
+    border-color: black;
+    color: white;
+    height: 50px;
+    line-height: 50px;
+    padding: 0;
+}
 
 #myselectOption button {
     pointer-events: none; 
@@ -141,6 +152,18 @@ button#selectFoodOption {
 }
 
 #myselectOption input { 
+    border-color:#000;
+    height: 100%;
+}
+
+#myselectOption2 button {
+    pointer-events: none; 
+    background: #000;
+    border-color:#000;
+    color: #fff;
+}
+
+#myselectOption2 input { 
     border-color:#000;
     height: 100%;
 }
@@ -171,9 +194,6 @@ div.workout {
     height: 100px;
 }
 
-#myWorkoutModal {
-    width: 800px;
-}
 
 .modal-dialog {
     max-width: 800px;
@@ -193,5 +213,22 @@ h2.main_title {
     z-index: 200;
 }
 .input-group>.custom-select:not(:first-child), .input-group>.form-control:not(:first-child){
+    border-radius: 0;
+}
+
+a.logo {
+    pointer-events: none;
+}
+
+.modal .btn-primary {
+    background: #000;
+    border:1px solid #000;
+    border-radius: 0;
+}
+
+.modal .btn-secondary {
+    background: #fff;
+    border:1px solid #000;
+    color: black;
     border-radius: 0;
 }
